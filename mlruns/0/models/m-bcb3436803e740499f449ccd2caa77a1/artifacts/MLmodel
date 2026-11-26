@@ -1,0 +1,33 @@
+artifact_path: /home/romaric/pytorch/mlruns/0/models/m-bcb3436803e740499f449ccd2caa77a1/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.12.15
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.18.0
+model_id: m-bcb3436803e740499f449ccd2caa77a1
+model_size_bytes: 23711
+model_uuid: m-bcb3436803e740499f449ccd2caa77a1
+prompts: null
+run_id: 7a04cba036304759a8a978a9866436c0
+saved_input_example_info:
+  artifact_path: input_example.json
+  serving_input_path: serving_input_example.json
+  type: ndarray
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float32", "shape": [-1, 4]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-11-25 22:25:53.402341'
